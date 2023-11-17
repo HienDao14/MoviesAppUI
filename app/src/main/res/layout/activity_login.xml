@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".ui.activity.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/intro_pic"
+                android:scaleType="fitCenter"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Log In"
+                    android:textSize="50sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="128dp"
+                    android:layout_marginStart="23dp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/edt_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="18"
+                    android:hint="Username"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textAlignment="center"
+                    android:background="@drawable/edit_text_background"
+                    android:inputType="text"
+                    android:layout_marginTop="128dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"/>
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="18"
+                    android:hint="Password"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textAlignment="center"
+                    android:background="@drawable/edit_text_background"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"/>
+
+                <TextView
+                    android:id="@+id/tv_forgot_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:layout_marginTop="16dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_login"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/orange_button"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an account?"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:layout_marginTop="32dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Register Now"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </ScrollView>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
